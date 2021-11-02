@@ -1,7 +1,7 @@
 let varA = "A"; // B
 let varB = "B"; // C
 let varC = "C"; // A
-let varD = "D"; // temporario
+let varD = "D"; // D -- temporario
 
 varD = varA;
 varA = varB;
