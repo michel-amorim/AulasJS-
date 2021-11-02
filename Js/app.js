@@ -1,7 +1,11 @@
-let peso = prompt("Digite seu peso");
-let altura = prompt("Digite sua altura");
+let varA = "A"; // B
+let varB = "B"; // C
+let varC = "C"; // A
+let varD = "D"; // temporario
 
-peso = Number(peso);
-altura = Number(altura);
+varD = varA;
+varA = varB;
+varB = varC;
+varC = varD;
 
-alert(`Esse foi o resultado da soma total ${peso + altura}`);
+console.log(varA, varB, varC);
