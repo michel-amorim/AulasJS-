@@ -1,7 +1,12 @@
-let peso = prompt("Digite seu peso");
-let altura = prompt("Digite sua altura");
+let umaString = "Um texto";
 
-peso = Number(peso);
-altura = Number(altura);
+console.log(umaString);
 
-alert(`Esse foi o resultado da soma total ${peso + altura}`);
+// concat - concatenar
+// indexOf ->
+// lastIndexOf <-
+// match -- expressão regular
+// Replace -- repetição
+// length -- descobre a quantidade de caracteres
+// slice ou substring -- ??
+// toUpperCase -- Deixa a strig tudo maiusculo -- toLowwercase -- minusulo
