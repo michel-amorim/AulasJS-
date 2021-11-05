@@ -11,11 +11,11 @@ console.log(Num1.toFixed(2));
 
 console.log(Number.isInteger(Num1));
 
-// isInteger - Descobre se o numero é inteiro ou decimais
+// isInteger - Descobre se o numero é inteiro ou decimal
 
 let Num3 = 14;
 let temp = Num3 * "5";
 
 console.log(Number.isNaN(temp));
 
-// isNaN -- valida a qualidade da conta numerica.
+// isNaN -- valida a qualidade da conta numerica
