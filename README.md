@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 
-Mostrando meu desenvolvimento com estudos JS com o "Curso de JavaScript e TypeScript do básico ao avançado 2021" - Otavio Miranda
+Mostrando meu desenvolvimento nos estudos em JavaScript com o curso "Curso de JavaScript e TypeScript do básico ao avançado 2021", professor: Otavio Miranda.
 
 # Tecnologias utilizadas
 
