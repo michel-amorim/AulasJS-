@@ -46,7 +46,7 @@ console.log(vaiLogar2);
 
 //Usario errou a senha porém consegue efetuar login com seu nome
 
-// NOT (!)
+// NOT (!)sssss
 
 console.log(!true);
 
