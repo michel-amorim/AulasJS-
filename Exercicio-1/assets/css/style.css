@@ -15,8 +15,6 @@ body {
   padding: 0;
   background: var(--primary-color);
   font-family: "Open sans", sans-serif;
-  font-size: 1.3em;
-  line-height: 1.5em;
 }
 
 .container {
@@ -25,6 +23,11 @@ body {
   margin: 50px auto;
   padding: 20px;
   border-radius: 10px;
+}
+
+.tabela-imc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 form input,
