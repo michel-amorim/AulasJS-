@@ -7,6 +7,8 @@
 * {
   box-sizing: border-box;
   outline: 0;
+  list-style: none;
+  padding: 0;
 }
 
 body {
@@ -24,6 +26,21 @@ body {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.container-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+ul li {
+  margin-bottom: 10px;
 }
 
 form input,
