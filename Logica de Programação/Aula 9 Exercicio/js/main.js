@@ -1,3 +1,5 @@
+// Exemplo 1 = switch
+
 const h1 = document.querySelector(".container h1");
 const data = new Date();
 
@@ -95,4 +97,70 @@ function criaData(data) {
 
 h1.innerHTML = criaData(data);
 
+// O exemplo 2 não está funcionando! (pesquisar depois)
+
+/*const h2 = document.querySelector(".container2 h2");
+const d = new Date();
+
+h2.innerHTML = d.toLocaleDateString("pt-BR", {
+  dateStyle: "full",
+  timeStyle: "short",
+}); */
+
 //
+// Exemplo 3
+//
+
+const h3 = document.querySelector(".container3 h3");
+const d3 = new Date();
+
+function getDiaSemanaTexto3(diaSemana3) {
+  const diasSemana3 = [
+    "Domingo",
+    "Segunda-feira",
+    "Terça-feira",
+    "Quarta-feira",
+    "Quinta-feira",
+    "Sexta-feira",
+    "Sabado",
+  ];
+  return diasSemana3[diaSemana3];
+}
+
+function getNomeMes3(numeroMes3) {
+  const meses3 = [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+  ];
+  return meses3[numeroMes3];
+}
+
+function zeroAEsquerda3(num3) {
+  return num3 >= 10 ? num3 : `0${num3}`;
+}
+
+function criaData3(data3) {
+  const diaSemana3 = data3.getDay();
+  const numeroMes3 = data3.getMonth();
+
+  const nomeDia3 = getDiaSemanaTexto3(diaSemana3);
+  const nomeMes3 = getNomeMes3(numeroMes3);
+
+  return (
+    `${nomeDia3}, ${data3.getDate()}  de ${nomeMes3}` +
+    ` de ${data3.getFullYear()} ` +
+    `${zeroAEsquerda3(data3.getHours())}:${zeroAEsquerda3(data3.getMinutes())}`
+  );
+}
+
+h3.innerHTML = criaData3(d3);
