@@ -7,6 +7,7 @@ function relogio() {
     });
   }
 
+  const relogio = document.querySelector(".relogio");
   let segundos = 0;
   let timer;
 
@@ -24,17 +25,20 @@ function relogio() {
       clearInterval(timer);
       relogio.classList.add("zerarBlue");
       relogio.innerHTML = "00:00:00";
+      relogio.classList.remove("pausado");
       segundos = 0;
     }
+
     if (el.classList.contains("iniciar")) {
       relogio.classList.remove("pausado");
       relogio.classList.remove("zerarBlue");
       clearInterval(timer);
       iniciaRelogio();
     }
+
     if (el.classList.contains("pausar")) {
-      relogio.classList.add("pausado");
       clearInterval(timer);
+      relogio.classList.add("pausado");
     }
   });
 }
