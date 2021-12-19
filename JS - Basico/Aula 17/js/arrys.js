@@ -1,40 +1,48 @@
-// Criação de Arrys -- considerado objeto
+// Arrys é um objeto
 
-// -- Indices    0       1        2
+//              0       1        2      <- indices do Arrys
+const alunos = ["Luiz", "Maria", "Joao"];
 
-const alunos = ["Luiz", "Maria", "João"];
-console.log(alunos[1]); // -- O indice de um Arrys é diferente do indice de uma String
+alunos[0] = "Michel"; // substituindo no arrys no indice 0
+alunos[2] = "Juliana"; // substituindo no arrys no indice novo, indice 3
 
-//
-
-alunos[0] = "Michel"; // -- Uma forma de manipular um elemento dentro do Arrys
 console.log(alunos);
 
-//
+console.log(alunos.length); // descobrindo o tamnanho do Arrys
 
-alunos.push("Juliana"); // -- Adiciona mais um elemento o fim do seu Arrys
+// .push <-- adiciona um indice ao final do Arrys
+
+alunos.push("Fernanda");
+
+// .unshift <-- adiciona um arrys no indice 0
+
+alunos.unshift("Pedro");
 console.log(alunos);
 
-alunos.unshift("joaquim"); // -- Adiciona mais um elemento no inicio do seu Arrys ou seja, adiciona no indice 0
+// .pop <-- removendo elementos do ultimo indice do arrys
+
+const removido = alunos.pop(); // salvado quem foi removido do Arrys
+console.log(removido);
 console.log(alunos);
 
-//
+// .shift <-- removendo elementos do primeiro indice do arrys
 
-const removidoFim = alunos.pop(); // -- Remove o ultimo elemento do Arrys, ultimo indice
-console.log(removidoFim);
+const removido2 = alunos.shift(); // salvado quem foi removido do Arrys
+console.log(removido2);
 console.log(alunos);
 
-//
+// delete <-- deletando algum indice dentro do Arrys, porém voce deixa um espaço vazio no arrys
 
-const removidoInicio = alunos.shift(); // Remove o primeiro elemento do Arrys, indice 0
-console.log(removidoInicio);
+delete alunos[2];
 console.log(alunos);
 
-//
+// slice <-- fatiando o arrys
 
-delete alunos[1]; // Uma forma de deletar sem mexer nos indices, logo fica vazio, ficara "undefined" (valo que nao existe)
-console.log(alunos);
+alunos.push("Henrique");
+alunos.push("Joaquim"); // adicionado ao fim do arrys novos arrys
 
-//
+console.log(alunos.slice(0, 1));
 
-console.log(alunos instanceof Array); // Verificar se realmente estamos trabalhando com Array
+// instanceof Array <-- verificando se é arrys
+
+console.log(alunos instanceof Array);
