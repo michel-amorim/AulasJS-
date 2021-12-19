@@ -1,21 +1,45 @@
-let Num1 = 10.4896215649;
-let Num2 = 2.5;
+// Number
+// IEEE 754-2008 -- padrão de contas em JS
 
-console.log(Num1.toString() + Num2);
+/*
+toString() -- transformando em String 
 
-// toString - transformar numero em letra temporariamente ou não
+toFixed() -- Arredondando casa decimais
 
-console.log(Num1.toFixed(2));
+Number.isInteger -- Verifica se o numero é inteiro ou não (retorn true and false)
 
-// toFixed - arredonda numeros decimais
+Number.isInteger -- verifica se a conta é Not a Number
+*/
 
-console.log(Number.isInteger(Num1));
+let num1 = 1;
+let num2 = 2.5;
 
-// isInteger - Descobre se o numero é inteiro ou decimal
+num1 = num1.toString(); // transformando em String
+console.log(typeof num1);
 
-let Num3 = 14;
-let temp = Num3 * "5";
+console.log(num1 + num2);
 
-console.log(Number.isNaN(temp));
+//
 
-// isNaN -- valida a qualidade da conta numerica
+num1 = 10.5789551255547;
+
+console.log(num1.toFixed(2)); // Arredondando casa decimais
+
+//
+
+console.log(Number.isInteger(num1)); // Retornará falso pois o numero não é inteiro
+
+//
+
+let temp = num1 * "Ola";
+
+console.log(Number.isNaN(temp)); // Retornará verdadeiro. A conta é um Not a Number
+
+//
+
+num1 = 0.7;
+num2 = 0.1;
+
+num1 += num2; // num1 = num1 + num2;
+
+console.log(num1);
