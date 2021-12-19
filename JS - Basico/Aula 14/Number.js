@@ -6,7 +6,7 @@ toString() -- transformando em String
 
 toFixed() -- Arredondando casa decimais
 
-Number.isInteger -- Verifica se o numero é inteiro ou não (retorn true and false)
+Number.isInteger() -- Verifica se o numero é inteiro ou não (retorn true and false)
 
 Number.isInteger -- verifica se a conta é Not a Number
 */
