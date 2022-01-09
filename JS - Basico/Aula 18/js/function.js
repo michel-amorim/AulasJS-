@@ -1,9 +1,8 @@
-function saudacao(nome) {
-  return `Bom dia ${nome}`;
-}
+// function
 
-saudacao("Luiz");
-saudacao("Maria");
+function saudacao(nome) {
+  return `Bom dia ${nome}!`;
+}
 
 const variavel = saudacao("Luiz");
 console.log(variavel);
@@ -15,7 +14,7 @@ function soma(x, y) {
   return resultado;
 }
 
-console.log(soma(365, 217));
+console.log(soma(2, 2));
 
 // função anonima
 
