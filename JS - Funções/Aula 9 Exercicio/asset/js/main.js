@@ -24,6 +24,7 @@ function criaCalculadora() {
         }
       });
     },
+
     realizaConta() {
       let conta = this.display.value;
 
@@ -69,6 +70,8 @@ function criaCalculadora() {
         if (el.classList.contains("btn-eq")) {
           this.realizaConta();
         }
+
+        this.display.focus();
       });
     },
 
