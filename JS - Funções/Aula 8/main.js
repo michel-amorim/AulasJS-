@@ -1,4 +1,4 @@
-// Funções fábricas (Factory Functions -> this)
+// Funções fábricas (Factory Functions -> this) -> fabrica objetos
 
 function criaPessoa(nome, sobrenome, a, p) {
   return {
