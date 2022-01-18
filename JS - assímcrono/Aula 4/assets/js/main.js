@@ -4,7 +4,7 @@ const request = (obj) => {
     xhr.open(obj.method, obj.url, true);
     xhr.send();
 
-    xhr.addEventListener("loud", () => {
+    xhr.addEventListener("load", () => {
       if (xhr.status >= 200 && xhr.status < 300) {
         resolve(xhr.responseText);
       } else {
