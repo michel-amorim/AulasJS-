@@ -1,15 +1,19 @@
 /* 
+
  if -> se -- pode ser usado sozinho com a condição dele
 
- else -> se não, outra -- Não pode ser executado sozinho. Precisa de um if antes.
-  Else if pode ser criado varias vezes.
+ else -> se não, outra -- Não pode ser executado sozinho. Precisa de um if antes. Else if pode ser criado varias vezes.
+ 
+ Só posso ter um else, chegando ao final
  */
 
 /*
+
   Entre 0 - 11 - Bom dia 
   Entre 12 - 17 - Boa tarde
   Entre 18 - 23 - Boa noie
-  */
+  
+*/
 
 // Exemplos:
 
