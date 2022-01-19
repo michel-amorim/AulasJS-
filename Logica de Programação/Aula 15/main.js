@@ -7,10 +7,12 @@ for (let i in frutas) {
   console.log(frutas[i]);
 }
 
+//
+
 const pessoa = {
   nome: "Michel",
   Sobrenome: "Silva",
-  Idade: 24,
+  idade: 24,
 };
 
 for (let chave in pessoa) {
