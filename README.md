@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 
-Mostrando meu desenvolvimento nos estudos em JavaScript e TypeScript com o curso "Curso de JavaScript e TypeScript do básico ao avançado 2021", professor: Luiz Otávio.
+Mostrando meu desenvolvimento nos estudos em JavaScript com o curso "Curso de JavaScript e TypeScript do básico ao avançado 2021", professor: Luiz Otávio.
 
 # Tecnologias utilizadas
 
