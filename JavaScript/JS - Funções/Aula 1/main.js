@@ -1,5 +1,7 @@
 // Maneiras de declarar funções
 
+// First-class objects (objetos de primeira classe)
+
 // Declaração de funções (function hoistings)
 
 function falaOi() {
@@ -8,8 +10,7 @@ function falaOi() {
 
 falaOi();
 
-// First-class objects (objetos de primeira classe)
-
+// Function expression
 const souUmDado = function () {
   console.log("Sou um dado");
 };
@@ -17,7 +18,6 @@ const souUmDado = function () {
 souUmDado();
 
 // Arrow function
-
 const funcaoArrow = () => {
   console.log("Sou uma arrow function");
 };

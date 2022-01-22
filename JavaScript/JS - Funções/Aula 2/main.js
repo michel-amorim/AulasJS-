@@ -1,14 +1,14 @@
 function funcao() {
-  console.log(arguments[10]);
+  console.log(arguments[10]); // paranmetro de uma funcao
 }
-
-// quando defenido uma função com a palavra function existe uma variavel disponivel chamada argumensts. Tudo que é enviado é sustentado e voce tem acesso ao valor pelo indece respectivo
 
 funcao("Valor", 1, 2, 3, 4, 5, 6, 7, 8, 9, "Luiz");
 
+// quando defenido uma função com a palavra function existe uma variavel disponivel chamada argumensts. Tudo que é enviado é sustentado e voce tem acesso ao valor pelo indece respectivo
+
 function funcao2() {
   let total = 0;
-  for (argumento of arguments) {
+  for (let argumento of arguments) {
     total += argumento;
   }
   console.log(total);
@@ -59,7 +59,7 @@ funcao7({ nome: "Michel", sobrenome: "Silva", idade: 20 });
 
 //
 
-const conta = function conta(operador, acumulador, ...numeros) {
+const conta = (operador, acumulador, ...numeros) => {
   for (let numero of numeros) {
     if (operador === "+") acumulador += numero;
     if (operador === "-") acumulador -= numero;
@@ -71,3 +71,6 @@ const conta = function conta(operador, acumulador, ...numeros) {
 };
 
 conta("-", 0, 20, 30, 40, 50);
+conta("+", 0, 20, 30, 40, 50);
+conta("*", 1, 20, 30, 40, 50);
+conta("/", 1, 20, 30, 40, 50);
