@@ -3,7 +3,7 @@ function rand(min = 1000, max = 3000) {
   return Math.floor(num);
 } // gerando numero aleatorio
 
-// Funcao calback
+// Funcao callback
 
 function f1(callback) {
   setTimeout(function () {
@@ -31,3 +31,17 @@ f1(function () {
     });
   });
 });
+
+// Codigo mais enxuto do exemplo acima
+
+f1(f1Callback);
+
+function f1Callback() {
+  f2(f2Callback);
+}
+function f2Callback() {
+  f3(f3Callback);
+}
+function f3Callback() {
+  console.log("Ola mundo");
+}
