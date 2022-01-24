@@ -12,7 +12,6 @@ const { texto, arquivos } = require("./base");
 
 */
 
-console.log(texto);
 const regExp1 = /Jo+ão+/gi;
 console.log(texto.match(regExp1));
 
